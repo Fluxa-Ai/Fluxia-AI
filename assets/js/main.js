@@ -1,0 +1,1 @@
+console.log('FluxAI site loaded. Replace placeholder Stripe links when ready.');

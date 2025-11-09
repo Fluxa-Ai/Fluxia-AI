@@ -1,0 +1,37 @@
+
+:root{
+  --bg:#05080b;--card:#0b1119;--muted:#9fb0c4;--text:#e6eef7;
+  --accent:#00eaff;--accent2:#5fffd0;
+}
+*{box-sizing:border-box}
+body,html{margin:0;padding:0;font-family:Inter,sans-serif;color:var(--text);background:var(--bg)}
+a{color:var(--text);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;z-index:10}
+.nav.glass{background:rgba(10,14,20,.5);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.menu a{margin:0 12px;opacity:.9}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#041018;padding:12px 20px;border-radius:12px;font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.2);color:var(--text)}
+.btn.small{padding:8px 12px;font-size:.9rem}
+.btn.wide{display:block;text-align:center;margin-top:10px}
+.hero{padding:90px 0;text-align:left;background:radial-gradient(ellipse at top,var(--card) 0%,var(--bg) 100%)}
+.hero h1{font-size:48px;line-height:1.1;margin:0}
+.lead{color:var(--muted);margin:16px 0}
+.accent{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent}
+.video-section{padding:40px 0;text-align:center}
+.video-placeholder{display:inline-block;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:40px 60px;position:relative}
+.play-button{font-size:48px;color:var(--accent);margin-bottom:12px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:20px}
+.price-card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px;text-align:center}
+.price-card.featured{border-color:rgba(95,255,208,.4);box-shadow:0 0 20px rgba(95,255,208,.1)}
+.price{font-size:36px;font-weight:800}
+.footer{border-top:1px solid rgba(255,255,255,.08);padding:30px 0;margin-top:50px;text-align:center}
+.legal small{display:block;margin:5px 0;color:var(--muted)}
+.form-card{background:var(--card);padding:20px;border-radius:14px;max-width:520px;margin:auto;text-align:center}
+.form-card form{display:flex;gap:10px;margin-top:10px}
+.form-card input{flex:1;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:#0c1220;color:var(--text)}
+.play-button:hover{color:var(--accent2)}
